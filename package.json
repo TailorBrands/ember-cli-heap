@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-heap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Ember CLI Addon to add support for Heap Analytics",
   "directories": {
     "doc": "doc",
