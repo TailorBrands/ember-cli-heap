@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-heap",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "An Ember CLI Addon to add support for Heap Analytics",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,23 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TailorBrands/ember-cli-heap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TailorBrands/ember-cli-heap/issues"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Nadav Shatz <nadavshatz@gmail.com>",
+  "contributors": [
+    {
+      "name": "Nadav Shatz",
+      "email": "nadavshatz@gmail.com"
+    }
+  ],
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -38,7 +50,11 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "heap",
+    "heap-analytics",
+    "analytics",
+    "tracking"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5"
