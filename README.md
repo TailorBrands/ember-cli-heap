@@ -1,4 +1,4 @@
-# Ember-cli-heap
+# Ember-cli-heap [![Ember Observer Score](https://emberobserver.com/badges/ember-cli-heap.svg)](https://emberobserver.com/addons/ember-cli-heap)
 
 This ember-cli addon injects heap analytics into index.html. More info on heap at https://heapanalytics.com
 
