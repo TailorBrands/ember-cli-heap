@@ -1,26 +1,35 @@
-# Ember-cli-heap [![Ember Observer Score](https://emberobserver.com/badges/ember-cli-heap.svg)](https://emberobserver.com/addons/ember-cli-heap)
+ember-cli-heap
+==============================================================================
+
+[![Ember Observer Score](https://emberobserver.com/badges/ember-cli-heap.svg)](https://emberobserver.com/addons/ember-cli-heap)
 
 This ember-cli addon injects heap analytics into index.html. More info on heap at https://heapanalytics.com
 
-## Installation
 
+
+Compatibility
+------------------------------------------------------------------------------
+* Ember.js v3.4 or above
+* Ember CLI v2.13 or above
+* Node.js v8 or above
+
+Installation
+------------------------------------------------------------------------------
 `ember install ember-cli-heap`
 
-## Configuration
+Configuration
+------------------------------------------------------------------------------
 
 This plugin uses the ember-cli project's configuration as defined in `config/environment.js`.
-
-Add your heap projectId to `config/environment.js` and you're good to go.
-
 ```js
 // environment.js
-
     ENV.heap = {
         projectId: 'xxxxxx'
     }
 ```
 
-## Disabling per environment
+Add your heap projectId to `config/environment.js` and you're good to go.
+
 
 You can disable injecting heap into different environments by setting the
 development param to true:
@@ -39,7 +48,8 @@ if (environment === 'test') {
 
 This is completely unofficial and is not related to Heap Analytics in any way.
 
-## Contributing
+Contributing
+------------------------------------------------------------------------------
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -47,5 +57,11 @@ This is completely unofficial and is not related to Heap Analytics in any way.
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## About Tailor Brands
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
+
+About Tailor Brands
+------------------------------------------------------------------------------
 [Check us out!](https://www.tailorbrands.com)
