@@ -1,8 +1,7 @@
-/* eslint-env node */
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-heap',
+  name: require('./package').name,
 
   contentFor: function(type, config) {
     if (type === 'head-footer' && config.heap && !config.heap.development && config.heap.projectId) {
