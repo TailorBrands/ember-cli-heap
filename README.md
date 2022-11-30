@@ -9,9 +9,10 @@ This ember-cli addon injects heap analytics into index.html. More info on heap a
 
 Compatibility
 ------------------------------------------------------------------------------
-* Ember.js v3.4 or above
-* Ember CLI v2.13 or above
-* Node.js v8 or above
+
+* Ember.js v3.24 or above
+* Ember CLI v3.24 or above
+* Node.js v12 or above
 
 Installation
 ------------------------------------------------------------------------------
