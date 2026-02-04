@@ -92,6 +92,7 @@
     "configPath": "tests/dummy/config"
   },
   "overrides": {
+    "braces": ">=3.0.3",
     "lodash.template": "npm:lodash@^4.17.21"
   }
 }
