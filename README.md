@@ -5,6 +5,8 @@ ember-cli-heap
 
 This ember-cli addon injects heap analytics into index.html. More info on heap at https://heapanalytics.com
 
+Since v5 this injects the **Heap v5 web SDK** loader
+([docs](https://developers.heap.io/docs/web)).
 
 
 Compatibility
@@ -12,7 +14,32 @@ Compatibility
 
 * Ember.js v3.24 or above
 * Ember CLI v3.24 or above
-* Node.js v12 or above
+* Node.js v22 or above
+
+
+Upgrading from 4.x
+------------------------------------------------------------------------------
+
+Configuration is unchanged — `ENV.heap.projectId` is the v5 env id, and
+`ENV.heap.development` still opts an environment out. What changes is the shape
+of `window.heap`:
+
+| 4.x (v4 SDK) | 5.x (v5 SDK) |
+|---|---|
+| `heap.userId` property | `heap.getUserId()` |
+| `heap.identity` property | `heap.getIdentity()` |
+| `heap.appid` | `heap.envId` |
+| — | `heap.onReady(cb)` |
+| `setEventProperties`, `unsetEventProperty` | removed by Heap |
+
+**Readiness is now observable.** v5 loads in two hops: the injected
+`heap_config.js` fetches the library itself, so that script's `load` event fires
+*before* `getUserId()` can answer. Anything that needs Heap's anonymous id must
+go through `heap.onReady`, which the queue stub records — so it fires regardless
+of when you register it, and you never poll a getter.
+
+Every method in `QUEUED_METHODS` (`lib/heap-snippet.js`) is shimmed by the stub,
+so calls made before the library lands are replayed once it is ready.
 
 Installation
 ------------------------------------------------------------------------------

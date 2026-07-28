@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-heap",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "An Ember CLI Addon to add support for Heap Analytics",
   "keywords": [
     "ember-addon",
@@ -29,6 +29,7 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
+    "test:node": "node --test tests/node/heap-snippet-test.js",
     "test:ember": "ember test",
     "test:ember-compatibility": "ember try:each"
   },
@@ -74,7 +75,7 @@
     "qunit-dom": "^1.6.0"
   },
   "engines": {
-    "node": "12.* || 14.* || >= 16"
+    "node": ">= 22"
   },
   "bugs": {
     "url": "https://github.com/TailorBrands/ember-cli-heap/issues"

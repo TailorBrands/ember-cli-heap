@@ -32,6 +32,8 @@ module.exports = {
         './testem.js',
         './blueprints/*/index.js',
         './config/**/*.js',
+        './lib/**/*.js',
+        './tests/node/**/*.js',
         './tests/dummy/config/**/*.js',
       ],
       parserOptions: {
