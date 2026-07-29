@@ -1,6 +1,24 @@
 ember-cli-heap
 ==============================================================================
 
+> [!WARNING]
+> ## ⚠️ Deprecated — this project is no longer maintained
+>
+> **As of July 2026 this addon is deprecated and this repository is archived.**
+>
+> - No further releases, bug fixes, security patches, or dependency updates will be published.
+> - Issues and pull requests are closed; the repository is read-only.
+> - The last published version is `5.0.0`, which injects the Heap v5 web SDK loader.
+>
+> **What to do instead:** add the [Heap web SDK](https://developers.heap.io/docs/web)
+> snippet to your app directly — for example in `app/index.html`, or via your own
+> in-repo `contentFor('head')` addon — using the env id from your Heap project.
+> The loader in `lib/heap-snippet.js` is a working reference if you want to keep
+> the queueing/`onReady` behaviour.
+>
+> Existing installs keep working; nothing is being taken down. The rest of this
+> README is kept for reference.
+
 [![Ember Observer Score](https://emberobserver.com/badges/ember-cli-heap.svg)](https://emberobserver.com/addons/ember-cli-heap)
 
 This ember-cli addon injects heap analytics into index.html. More info on heap at https://heapanalytics.com
@@ -43,6 +61,9 @@ so calls made before the library lands are replayed once it is ready.
 
 Installation
 ------------------------------------------------------------------------------
+
+> **Deprecated.** Not recommended for new projects — see the notice at the top.
+
 `ember install ember-cli-heap`
 
 Configuration
@@ -79,11 +100,9 @@ This is completely unofficial and is not related to Heap Analytics in any way.
 Contributing
 ------------------------------------------------------------------------------
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+This repository is archived and read-only — issues and pull requests are no
+longer accepted. You're welcome to fork it and carry it forward under the MIT
+license.
 
 License
 ------------------------------------------------------------------------------
